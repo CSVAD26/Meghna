@@ -77,7 +77,7 @@ function createColorControls() {
   // start color slider object
   startColorControl = new ColorSlider(
     controls,
-    "START COLOR",
+    "START",
     startHue,
     value => { // callback function that runs whenever the start slider changes
       startHue = value; // saves new hue in startHue
@@ -88,7 +88,7 @@ function createColorControls() {
   // end color slider object
   endColorControl = new ColorSlider(
     controls,
-    "END COLOR",
+    "END",
     endHue,
     value => { // callback function that runs whenever the end slider changes
       endHue = value;
@@ -253,14 +253,14 @@ function drawHeader() {
   noStroke();
 
   textSize(15);
-  text(`Frames: ${totalFrames}    Frame: ${currentFrame + 1}/${totalFrames}`, OUTER_MARGIN, 85);
-  text(`FPS: ${fps}    Playback: ${playbackMode}`, OUTER_MARGIN, 105);
+  // text(`Frames: ${totalFrames}    Frame: ${currentFrame + 1}/${totalFrames}`, OUTER_MARGIN, 85);
+  // text(`FPS: ${fps}    Playback: ${playbackMode}`, OUTER_MARGIN, 105);
 
   textAlign(RIGHT, TOP);
   textStyle(BOLD);
   textSize(15);
   fill(isPlaying ? color(20, 120, 85) : color(86, 101, 118));
-  text(isPlaying ? "PLAYING" : "EDITING", width - OUTER_MARGIN, 105);
+  // text(isPlaying ? "PLAYING" : "EDITING", width - OUTER_MARGIN, 105);
   pop();
 }
 
@@ -343,11 +343,11 @@ function drawFooter() {
   textAlign(LEFT, BOTTOM);
   if (width < 700) {
     textSize(12);
-    text("Draw | N/Enter: next | B: back | C: clear | 2–9: frames", OUTER_MARGIN, height - 35);
+    text("2–9: frames | N/Enter: next | B: back | C: clear", OUTER_MARGIN, height - 35);
     text("Space: play/stop | P: mode | +/−: FPS", OUTER_MARGIN, height - 15);
   } else {
     textSize(15);
-    text("Draw  |  N / Enter: next  |  B: back  |  C: clear  |  2–9: frames", OUTER_MARGIN, height - 35);
+    text("2–9: frames | N / Enter: next  |  B: back  |  C: clear ", OUTER_MARGIN, height - 35);
     text("Space: play / stop  |  P: loop / ping-pong  |  + / −: FPS", OUTER_MARGIN, height - 15);
   }
   pop();

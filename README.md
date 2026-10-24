@@ -14,3 +14,5 @@ In this sketch, I wanted to create three movable swatches (extedning the Palette
 ## Assignment 3
 
 This sketch extends the OpenCV K-means Color example by processing live webcam video instead of a user-uploaded image. It groups the pixels in each frame into color clusters and displays a simplified version of the video using those representative colors. The current number of clusters is shown on screen. You can press + or = to increase the number of clusters, or − to decrease it (to a minimum of two). Changing the cluster count lets you explore how it affects the amount of colors and details in the video.
+
+## Project 1
