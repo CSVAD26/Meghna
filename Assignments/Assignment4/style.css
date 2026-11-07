@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+}
