@@ -20,6 +20,7 @@ coverage/
 .env
 .env.*
 !.env.example
+.venv
 
 # JavaScript tooling
 .nyc_output/
@@ -38,5 +39,11 @@ Thumbs.db
 .vscode/
 .idea/
 
-# CSV
+# CSV + Data
 Assignments/Assignment4/cycling_workouts.csv
+Projects/Project2/Data/
+Projects/Project2/Books_N_Movies/data/
+Projects/Project2/Books_N_Movies/.sg_cookie
+
+# LLM
+Projects/Project2/.claude
