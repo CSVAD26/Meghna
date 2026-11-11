@@ -1428,7 +1428,7 @@ function drawCard(item, x, y, w) {
         hint = 'click to change my rating';
       } else {
         const verb = item.type === 'movie' ? 'watched' : 'read';
-        hint = `click if I've ${verb} it, to enter my rating`;
+        hint = `click to rate if ${verb}`;
       }
       y = drawParagraph(hint, x, y, w, 14) - 14;
     } else if (rated) {
