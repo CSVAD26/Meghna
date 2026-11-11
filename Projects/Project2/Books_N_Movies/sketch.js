@@ -1094,7 +1094,24 @@ function drawCover(item, centerX, centerY, w, h, saturation, opacity) {
   ctx.imageSmoothingQuality = 'high';
 
   if (item.img && item.img.width > 1) {
-    ctx.drawImage(item.img.canvas, left, top, w, h);
+    // most covers are 2:3, but some (ex: square audiobook covers) aren't
+    // those get fitted inside the 2:3 box on a dark background instead of being stretched
+    const imageRatio = item.img.width / item.img.height;
+    const boxRatio = w / h;
+    if (abs(imageRatio / boxRatio - 1) <= 0.1) {
+      ctx.drawImage(item.img.canvas, left, top, w, h);
+    } else {
+      let drawW = w;
+      let drawH = h;
+      if (imageRatio > boxRatio) {
+        drawH = w / imageRatio; // wider than the box: bars on top and bottom
+      } else {
+        drawW = h * imageRatio; // taller than the box: bars on the sides
+      }
+      ctx.fillStyle = '#1a1612';
+      ctx.fillRect(left, top, w, h);
+      ctx.drawImage(item.img.canvas, centerX - drawW / 2, centerY - drawH / 2, drawW, drawH);
+    }
   } else {
     // placeholder: a colored box with the title's first letter
     ctx.fillStyle = item.type === 'movie' ? '#4a3a1c' : '#1f4238';
