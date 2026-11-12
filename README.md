@@ -20,3 +20,6 @@ This sketch visualizes cycling workouts as concentric oval tracks. The track siz
 
 ## Project 1
 In this project, I created a 2D frame-by-frame animation tool called *Fun Animation Lab*. Designed to remove the steep learning curve of traditional animation software, the tool lets you sketch, color, and animate without needing prior technical knowledge. It introduces an aesthetic constraint where your palette dynamically interpolates between a start and end hue across frames, linking color progression directly with motion. It features onion-skinning, flexible frame counts (2–9 frames), adjustable frame rates, and loop or ping-pong playback modes. For a full reflection on the design process, UX insights, and review learnings, see the complete [Project 1 Readme](./Projects/Project1/README.md).
+
+## Project 2
+*My Films & Books Log* is an interactive visualization comparing my Letterboxd film ratings and StoryGraph book ratings with public ratings. Movie posters and book covers are plotted by my rating and the public rating, with predicted ratings shown for my watchlist and to-be-read books. You can explore six views, filter by genres and reading themes, zoom and pan around the plot, and enter ratings to update the predictions. For more details, see the complete [Project 2 README](./Projects/Project2/README.md).

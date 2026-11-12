@@ -164,8 +164,7 @@ I'd rate more books to give the model more to learn from, and try features a lin
 ---
 
 ## How People Used It
-
-*To fill in after user testing: who tried it, what they explored first, what surprised or confused them, and what I would change afterward.*
+Overall, the user was able to navigate the tool and use its features successfully. I feel that this suggests that keeping the interface relatively free of instructions encouraged users to explore the data on their own, as I intended. The movie posters and book covers also drew users’ attention, making the visualized data easy to notice. However, some text—particularly the details in the right-hand panel and the grid labels—was difficult to read because ofeither the color palette I settled on or the text size (I presume). Although I chose colors inspired by Letterboxd and StoryGraph to create a consistent aesthetic, this choice sometimes reduced contrast. In a future iteration, I would increase the contrast and size of these text elements while preserving the visual style of the interface.
 
 ---
 
